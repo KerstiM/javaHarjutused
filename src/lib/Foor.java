@@ -129,7 +129,7 @@ public class Foor {
         Platform.runLater(()-> tuli.setFill(V2rvid[onSees ? indeks : HALL.ordinal()]));
 
         // "YLEMINE::KOLLANE switched on"
-        // System.out.printf("%7s::%-8s %s\n", Suund, v2rv, onSees ? "on" : "off");
+        System.out.printf("%7s::%-8s %s\n", Suund, v2rv, onSees ? "on" : "off");
     }
 
 	private void muudaInfot(String infoTekst) {
