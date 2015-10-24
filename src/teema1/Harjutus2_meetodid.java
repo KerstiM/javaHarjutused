@@ -45,7 +45,7 @@ public class Harjutus2_meetodid {
         }
     }
 
-    private static int tostaKuupi(int arv) {
+   /** private static int tostaKuupi(int arv) {
         return (int) Math.pow(arv, 3);
-    }
+    }*/
 }
