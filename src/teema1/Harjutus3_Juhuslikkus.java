@@ -25,19 +25,31 @@ import java.util.Random;
 
 public class Harjutus3_Juhuslikkus {
     public static void main(String[] args) {
+        /** Ülesanne 1
         Scanner kasutajaSisestus = new Scanner(System.in); //scanner kasutaja sisestuseks
 
         int sisend;
         System.out.println("Kull või kiri? Kui arvad, et kull, kirjuta 1, kui arvad, et kiri, kirjuta 2.");
         sisend = kasutajaSisestus.nextInt();
 
-        int r2 = (int) (2*Math.random()+1);
+        int r2 = (int) (2*Math.random()+1); // genereerib suvalise arvu, kuidas täpselt toimib, ei tea.
         System.out.println("Viskan münti ja tulemus on: "+r2);
         if (r2 == sisend){
             System.out.println("Sinu võit!");
         } else {
             System.out.println("Kahjuks kaotasid :(");
         }
+        */
+        //Ülesanne 2
+        Scanner kasutajaSisestus = new Scanner(System.in); //scanner kasutaja sisestuseks
+
+        int sisend;
+        System.out.println("Palun sisesta inimeste arv");
+        sisend = kasutajaSisestus.nextInt();
+        int valjund = (int) (Math.random() *sisend +1);
+        System.out.println("Sulle genereeritud suvaline arv on "+ valjund);
+
+
     }
 }
 
