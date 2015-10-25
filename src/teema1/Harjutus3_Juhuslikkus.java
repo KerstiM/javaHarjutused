@@ -1,4 +1,6 @@
 package teema1;
+import java.util.Scanner;
+import java.util.Random;
 
 /**
  * Juhuslikkus
@@ -19,8 +21,24 @@ package teema1;
  *    (arvutile), arvutab mõlema mängija silmade summad ja teatab,
  *    kellel oli rohkem.
  */
+
+
 public class Harjutus3_Juhuslikkus {
     public static void main(String[] args) {
+        Scanner kasutajaSisestus = new Scanner(System.in); //scanner kasutaja sisestuseks
 
+        int sisend;
+        System.out.println("Kull või kiri? Kui arvad, et kull, kirjuta 1, kui arvad, et kiri, kirjuta 2.");
+        sisend = kasutajaSisestus.nextInt();
+
+        int r2 = (int) (2*Math.random()+1);
+        System.out.println("Viskan münti ja tulemus on: "+r2);
+        if (r2 == sisend){
+            System.out.println("Sinu võit!");
+        } else {
+            System.out.println("Kahjuks kaotasid :(");
+        }
     }
 }
+
+
